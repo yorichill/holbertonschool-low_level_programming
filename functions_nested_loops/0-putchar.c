@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - E ptn
  *
- * Description: Prints _putchar followed by a new line
+ * Description: Prints _putchar
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
 
-    return (0);
+return (0);
 }
