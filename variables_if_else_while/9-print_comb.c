@@ -1,26 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Determines if a number is positive, negative or zero
+ * main - prints all single digit numbers separated by comma and space
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	printf("%d is ", n);
-	if (n > 0)
-		printf("positive\n");
-	else if (n == 0)
-		printf("zero\n");
-	else
-		printf("negative\n");
-
+	for (n = 0; n <= 9; n++)
+	{
+		putchar(n + '0');
+		if (n != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 	return (0);
 }
