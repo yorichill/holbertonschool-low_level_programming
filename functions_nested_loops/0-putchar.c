@@ -1,23 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - E ptn
- *
- * Description: Prints _putchar
+ * main - prints "_putchar" followed by a new line
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
+	char text[] = "_putchar";
+	int i;
 
-return (0);
+	for (i = 0; text[i] != '\0'; i++)
+		_putchar(text[i]);
+	_putchar('\n');
+
+	return (0);
 }
