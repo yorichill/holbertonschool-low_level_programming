@@ -14,7 +14,7 @@ void print_most_numberss(void)
 		_putchar(i + '0');
       
 	}
-    if (i = 2 || i = 4 )
+    if (i == 2 || i == 4)
     continue;
 	_putchar('\n');
 }
