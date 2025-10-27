@@ -3,12 +3,12 @@
 
 /**
  * mul -  that multiplies two integers.
- * @c: the character to check
- *
+ * @a: the number 1
+ * @b: the number 2
  * Return: Always the multiplies of two integers.
  */
 
 int mul(int a, int b)
 {
-
+return (a * b);
 }
