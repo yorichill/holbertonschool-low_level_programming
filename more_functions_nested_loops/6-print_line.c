@@ -15,6 +15,6 @@ for (; n != 0; n--)
 if (n = 0)
 _putchar('\n');
 
-_putchar(_);
+_putchar("_");
 }
 }
