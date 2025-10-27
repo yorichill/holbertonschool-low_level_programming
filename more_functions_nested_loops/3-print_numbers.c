@@ -2,18 +2,17 @@
 #include <stdio.h>
 
 /**
- * print_numbers -  print using 2 putchar
- * @i: runs through the chain
- * Return: all number
+ * print_numbers - prints the numbers from 0 to 9
+ *
+ * Return: nothing (void)
  */
 void print_numbers(void)
 {
-char text[] = "0123456789";
-int i;
+	int i;
 
-for (i = 0; text[i] != '\0'; i++)
-		_putchar(text[i]);
+	for (i = 0; i <= 9; i++)
+	{
+		_putchar(i + '0');
+	}
 	_putchar('\n');
-
-	return (0);
 }
