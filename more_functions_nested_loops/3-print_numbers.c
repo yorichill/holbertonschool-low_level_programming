@@ -6,6 +6,7 @@
  * @i: runs through the chain
  * Return: all number
  */
+void print_numbers(void)
 {
 char text[] = "0123456789";
 int i;
