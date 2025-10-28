@@ -2,15 +2,16 @@
 
 /**
  * reset_to_98 - met la valeur de l'entier pointé à 98
- * @n: pointeur vers un entier à modifier
+ * @a: pointeur vers un entier à modifier
+ * @b: pointeur vers un entier à modifier
  * Return: rien.
  */
 
 void swap_int(int *a, int *b)
 {
-    int temp;
+int temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+temp = *a;
+*a = *b;
+*b = temp;
 }
