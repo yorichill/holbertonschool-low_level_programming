@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * _strlen - met la valeur de l'entier pointé à 98
- * @s: pointeur vers un entier à modifier
- * Return: rien.
+ * _strlen - flemme
+ * @s: a
+ * Return: nothing
  */
 
 int _strlen(char *s)

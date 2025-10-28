@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - met la valeur de l'entier pointé à 98
- * @a: pointeur vers un entier à modifier
- * @b: pointeur vers un entier à modifier
- * Return: rien.
+ * swap_int - flemme
+ * @a: a
+ * @b: a
+ * Return: nothing
  */
 
 void swap_int(int *a, int *b)
