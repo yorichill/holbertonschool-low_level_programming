@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @str: pointer to the string
+ * cap_string - Met en majuscule la première lettre de chaque mot
+ * @str: chaîne de caractères à modifier
  *
- * Return: pointer to the modified string
+ * Return: pointeur vers la chaîne modifiée
  */
 char *cap_string(char *str)
 {
@@ -25,5 +25,6 @@ char *cap_string(char *str)
 			}
 		}
 	}
+
 	return (str);
 }

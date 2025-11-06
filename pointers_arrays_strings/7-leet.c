@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337
- * @str: pointer to the string
+ * leet - Encode une chaîne en 1337
+ * @str: chaîne à encoder
  *
- * Return: pointer to the modified string
+ * Return: pointeur vers la chaîne encodée
  */
 char *leet(char *str)
 {
@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; letters[j] != '\0'; j++)
 		{
 			if (str[i] == letters[j])
 			{
@@ -23,5 +23,6 @@ char *leet(char *str)
 			}
 		}
 	}
+
 	return (str);
 }

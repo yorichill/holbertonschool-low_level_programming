@@ -1,1 +1,1 @@
-# git pointer
+# Git Intro Project

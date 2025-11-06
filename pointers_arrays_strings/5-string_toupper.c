@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase
- * @str: pointer to the string
+ * string_toupper - Change toutes les lettres minuscules
+ * d'une chaîne en majuscules
+ * @str: chaîne à modifier
  *
- * Return: pointer to the modified string
+ * Return: pointeur vers la chaîne modifiée
  */
 char *string_toupper(char *str)
 {
@@ -15,5 +16,6 @@ char *string_toupper(char *str)
 		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] - 32;
 	}
+
 	return (str);
 }
