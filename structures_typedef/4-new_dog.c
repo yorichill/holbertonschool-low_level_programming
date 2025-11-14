@@ -9,6 +9,7 @@
  *
  * Return: pointer to new dog_t, or NULL if something fails
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
