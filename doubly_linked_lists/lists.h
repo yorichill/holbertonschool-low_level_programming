@@ -4,7 +4,7 @@
 /* Librairies standard nécessaires */
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h> /* Pour size_t */
+#include <stddef.h>
 
 /**
  * struct dlistint_s - doubly linked list node
@@ -22,7 +22,7 @@ typedef struct dlistint_s
     struct dlistint_s *next;
 } dlistint_t;
 
-/* Prototypes des fonctions du projet */
+/* Prototypes */
 size_t print_dlistint(const dlistint_t *h);
 
 #endif /* LISTS_H */
