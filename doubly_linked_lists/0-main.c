@@ -11,28 +11,33 @@
 int main(void)
 {
     dlistint_t *head;
-    dlistint_t *new;
-    dlistint_t hello = {8, NULL, NULL};
-    size_t n;
+    int sum;
 
-    head = &hello;
-    new = malloc(sizeof(dlistint_t));
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    
+    sum = sum_dlistint(head);
+    printf("Sum of nodes: %d\n", sum);
 
-    if (new == NULL)
-    {
-        dprintf(2, "Error: Can't malloc\n");
-        return (EXIT_FAILURE);
-    }
+    insert_dnodeint_at_index(&head, 5, 42);
+    printf("List after insertion at index 5:\n");
+    print_dlistint(head);
 
-    new->n = 9;
-    hello.prev = new;
-    new->next = &hello;
-    new->prev = NULL;
-    head = new;
+    delete_dnodeint_at_index(&head, 0);
+    delete_dnodeint_at_index(&head, 7); /* An index in the middle */
+    printf("List after deletion at index 0 and 7:\n");
+    print_dlistint(head);
 
-    n = print_dlistint(head);
-    printf("-> %lu elements\n", n);
-    free(new);
+    free_dlistint(head);
+    head = NULL;
 
     return (EXIT_SUCCESS);
 }
